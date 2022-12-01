@@ -1,0 +1,18 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block titulo %}
+<h2>resultados de la busqueda</h2>
+<br>
+<br>
+<hr>
+<section>
+    <article>
+        <ul>
+            {% for elemento in perrito%}
+            <li>elemento</li>
+            {% endfor %}
+        </ul>
+    </article>
+</section>
+
+{% endblock titulo %}

@@ -1,0 +1,16 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block titulo %}
+<form action="{%url 'encontrarperrito' %}" method="GET">
+<label>ingresa la raza de tu mascota</label>
+<input type="text" name="perritos" id='perritos'>
+<input type="submit" value="buscar">
+
+</form>
+
+<section>
+    <article>
+        <h3>{{mensaje}}</h3>
+    </article>
+</section>
+{% endblock titulo %}

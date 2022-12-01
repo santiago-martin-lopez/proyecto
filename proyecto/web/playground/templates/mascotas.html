@@ -1,0 +1,13 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block titulo %}
+<h1 class="mb-5">esta es la pagina de las mascotas</h1>
+{% endblock titulo %}
+{% block cambia %}
+<form action="{% url 'mascota' %}" method='POST'>{% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" value="envia mascota">
+</form>
+{% endblock cambia %}

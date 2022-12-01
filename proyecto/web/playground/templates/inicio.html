@@ -1,0 +1,37 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block titulo %}
+<h1 class="mb-5">esta es la pagina de inicio de aplicacion playground</h1>
+{% endblock titulo %}
+{% block cambia %}
+<h2>navega con los botones o utiliza las urls listadas a continuacion para cargar formularios de los distintos modelos</h2>
+<br>
+<br>
+<hr>
+<section>
+    <article style="background-color: rgb(114, 191, 165);color: black;">
+        <ul>
+            <li><strong>/familiar</strong></li>
+            <li><strong>/mascota</strong></li>
+            <li><strong>/estudios</strong></li>
+
+        </ul>
+    </article>
+</section>
+<br>
+<br>
+<hr>
+<section>
+    <article>
+        <h3>acuerdate que tambien puedes buscar tus datos a traves del protocolo http con el metodo get</h3>
+    </article>
+</section>
+{% endblock cambia %}
+
+{% block conte %}
+<section>
+    <article>
+     <h2>  {{mensaje}} </h2> 
+    </article>
+</section>
+{% endblock %}
